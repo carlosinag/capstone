@@ -34,7 +34,16 @@ Login
     </div>
     <!-- right div which is the welcome container -->
     <div class="welcome-container">
-
+        <p class="welcome-text">Welcome to <strong>*name*</strong></p>
+        <p class="sub-text">Don't have an account?</p>
+        <button id="sign-in-button" onclick="toRegister()">SIGN UP</button>
     </div>
 </div>
+
+<!-- JAVASCRIPT -->
+<script>
+    function toRegister(){
+        document.location.href = "{% url 'register' %}"
+    }
+</script>
 {% endblock %}

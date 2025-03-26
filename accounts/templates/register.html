@@ -13,7 +13,7 @@ Login
     <div class="welcome-container">
         <p class="welcome-text">Welcome to <strong>*name*</strong></p>
         <p class="sub-text">Already have an account?</p>
-        <button id="sign-in-button">SIGN IN</button>
+        <button id="sign-in-button" onclick="toLogin()">SIGN IN</button>
     </div>
 
     <!-- right div -->
@@ -45,4 +45,11 @@ Login
         </span>
     </div>
 </div>
+
+<!-- JAVASCRIPT -->
+<script>
+    function toLogin(){
+        document.location.href = "{% url 'login' %}"
+    }
+</script>
 {% endblock %}

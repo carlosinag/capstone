@@ -19,6 +19,11 @@ div.login-parent {
         background-color: #FAF9F6;
     }
     > div.welcome-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         float: right;
         height: 100%;
         width: 50%;
@@ -102,3 +107,33 @@ input#sign-in-button {
 }
 
 /* END OF LOGIN PARENT CSS */
+
+/* LEFT DIV / WELCOME DIV */
+
+.welcome-text {
+    font-size: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sub-text {
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#sign-in-button {
+    background-color: #E9DCC9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#sign-in-button:hover {
+    background-color: #d8c3a5;
+}
